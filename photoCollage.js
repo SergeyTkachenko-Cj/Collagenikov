@@ -23,11 +23,27 @@ function collage(frames) {
       btn.style.cssText += `background: url(${url}); background-size: cover; background-color: #2f8396;`;
     }
 
+    const btnAnim = (event) => {
+      const classes = ['js_circle2_anim', 'js_circle3_anim'];
+      const item = event.target.closest('.frame');
+      const circles = item.querySelectorAll('.js_anima');
+
+      circles.forEach((elem, index) => { 
+        if (elem.classList.contains(classes[index])) {
+          elem.classList.remove(classes[index]);
+        }
+        else {
+          elem.classList.add(classes[index]);
+        }
+      });
+    }
+
     const iterateFrames = (allFrames) => {
 
         const event = (el, ev) => {
           el.addEventListener(ev, trgt => {
             callForEachFrame(trgt);
+            btnAnim(trgt);
           })
         }
 

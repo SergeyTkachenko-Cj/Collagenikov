@@ -133,7 +133,11 @@ body {
       -ms-transform: rotate(-35deg);
           transform: rotateZ(-35deg);
 }
-
+.container .frame .js_circle2_anim {
+  -webkit-transform: rotateZ(145deg);
+      -ms-transform: rotate(145deg);
+          transform: rotateZ(145deg);
+}
 .container .frame .circle3 {
   width: 15rem;
   height: 15rem;
@@ -144,7 +148,11 @@ body {
       -ms-transform: rotate(30deg);
           transform: rotateZ(30deg);
 }
-
+.container .frame .js_circle3_anim {
+  -webkit-transform: rotateZ(-150deg);
+      -ms-transform: rotate(-150deg);
+          transform: rotateZ(-150deg);
+}
 .container .frame .push {
   position: absolute;
   display: inline-block;

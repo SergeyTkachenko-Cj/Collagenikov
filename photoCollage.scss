@@ -96,10 +96,18 @@ body {
 				transform: rotateZ(-35deg);
 			}
 
+			.js_circle2_anim {
+				transform: rotateZ(145deg);
+			}
+
 			.circle3 {
 				@include widtheight(15rem);
 				@include transit(0.5s);
 				transform: rotateZ(30deg);
+			}
+
+			.js_circle3_anim {
+				transform: rotateZ(-150deg);
 			}
 
 			.push {
